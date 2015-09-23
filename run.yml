@@ -1,8 +1,7 @@
 ---
 
 # Tests for ntp role
-
-- name: install apache 
+- hosts: all
   remote_user: root
   roles:
     - achaussier.apache 
