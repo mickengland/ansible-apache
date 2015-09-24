@@ -6,4 +6,4 @@
   sudo: yes
   remote_user: mick
   roles:
-    - achaussier.apache 
+    - achaussier.apache
