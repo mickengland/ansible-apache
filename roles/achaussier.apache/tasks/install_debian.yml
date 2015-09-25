@@ -1,0 +1,11 @@
+---
+
+- name : install apache packages
+  apt  :
+    name  : "{{ item }}"
+    state : "{{ apache_package_state }}"
+    update_cache     : True
+    cache_valid_time : 3600
+  with_items : "{{ apache_packages }}"
+  notify :
+    - restart apache
