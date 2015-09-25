@@ -1,7 +1,7 @@
 ---
 
 # Tests for ntp role
-- hosts: all
+- hosts: app 
   remote_user: mick 
   sudo: yes
   remote_user: mick
